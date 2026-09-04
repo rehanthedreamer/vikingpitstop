@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="description" content="Viking Pitstop is coming soon — motorcycle service, premium riding gear and accessories.">
+  <title>Viking Pitstop — Coming Soon</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+    :root{--ink:#0b0b0c;--orange:#ff5a14;--muted:#aaa9a7;--line:rgba(255,255,255,.17)}
+    *{box-sizing:border-box} html,body{margin:0;min-height:100%;background:var(--ink);color:#fff}
+    body{font-family:Inter,system-ui,sans-serif;overflow-x:hidden}
+    .page{position:relative;min-height:100svh;display:flex;flex-direction:column;isolation:isolate;background:#0b0b0c}
+    .hero{position:absolute;inset:0;z-index:-3;background:url('garage-hero.png') 63% center/cover no-repeat}
+    .shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(6,6,7,.98) 0%,rgba(6,6,7,.9) 34%,rgba(6,6,7,.34) 67%,rgba(6,6,7,.18) 100%),linear-gradient(0deg,rgba(6,6,7,.9),transparent 45%)}
+    .grain{position:absolute;inset:0;z-index:-1;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
+    header{height:104px;padding:0 clamp(24px,6vw,96px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand-logo{display:block;width:clamp(220px,24vw,370px);height:auto;filter:invert(1);mix-blend-mode:screen}
+    .status{display:flex;align-items:center;gap:10px;color:#dad9d6;font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}.status i{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 16px var(--orange)}
+    main{flex:1;display:flex;align-items:center;padding:64px clamp(24px,6vw,96px)}
+    .content{max-width:720px}
+    .eyebrow{display:flex;align-items:center;gap:14px;color:var(--orange);font:700 .85rem 'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase}.eyebrow:before{content:'';width:42px;height:2px;background:var(--orange)}
+    h1{margin:22px 0 24px;max-width:680px;font:800 clamp(4rem,9vw,8.3rem)/.82 'Barlow Condensed',sans-serif;letter-spacing:-.035em;text-transform:uppercase}
+    h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.76)}
+    .intro{max-width:550px;margin:0;color:#c5c3c0;font-size:clamp(1rem,1.4vw,1.18rem);line-height:1.7}
+    .services{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}.services span{padding:10px 14px;border:1px solid var(--line);background:rgba(12,12,13,.5);backdrop-filter:blur(10px);font-size:.76rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
+    footer{padding:26px clamp(24px,6vw,96px);display:flex;justify-content:space-between;gap:20px;color:#8e8d8a;border-top:1px solid var(--line);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
+    footer strong{color:#ddd;font-weight:500}
+    @media(max-width:720px){header{height:82px}.brand-logo{width:220px}.status{display:none}.hero{background-position:67% center;opacity:.63}.shade{background:linear-gradient(90deg,rgba(6,6,7,.97),rgba(6,6,7,.65)),linear-gradient(0deg,rgba(6,6,7,.95),transparent 60%)}main{align-items:flex-end;padding-top:100px;padding-bottom:50px}h1{font-size:clamp(3.7rem,20vw,6rem)}.intro{font-size:1rem}.services{margin-top:28px}footer{flex-direction:column;gap:8px}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero" role="img" aria-label="Adventure motorcycle inside a modern workshop"></div><div class="shade"></div><div class="grain"></div>
+    <header>
+      <img class="brand-logo" src="viking-logo-v2.png" alt="Viking Bike Service">
+      <div class="status"><i></i>Workshop in progress</div>
+    </header>
+    <main><section class="content">
+      <div class="eyebrow">Built for the ride</div>
+      <h1>Opening <span>Soon</span></h1>
+      <p class="intro">A new destination for expert motorcycle service, trusted riding gear and adventure-ready accessories. We’re getting the workshop ready.</p>
+      <div class="services" aria-label="Our services"><span>Motorcycle service</span><span>Riding gear</span><span>Accessories</span></div>
+    </section></main>
+    <footer><span>VikingPitstop.com</span><strong>Ride farther. We’ll handle the rest.</strong></footer>
+  </div>
+</body>
+</html>
